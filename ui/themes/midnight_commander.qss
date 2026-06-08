@@ -1,0 +1,137 @@
+/* ═══════════════════════════════════════════════════
+   SysRunner Theme: Midnight Commander
+   Classic MC Green-on-Black Terminal Style
+   ═══════════════════════════════════════════════════ */
+
+QMainWindow, QWidget {
+    background-color: #000000;
+    color: #00AA00;
+    font-family: "Courier New", "DejaVu Sans Mono", monospace;
+    font-size: 13px;
+}
+
+QMenuBar {
+    background-color: #000088;
+    color: #AAFFAA;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    border-bottom: 1px solid #00AA00;
+    spacing: 4px;
+    padding: 2px 4px;
+}
+QMenuBar::item { background: transparent; padding: 2px 10px; color: #FFFFFF; }
+QMenuBar::item:selected, QMenuBar::item:pressed {
+    background-color: #00AA00; color: #000000;
+}
+QMenu {
+    background-color: #000088;
+    color: #FFFFFF;
+    border: 1px solid #00AA00;
+    font-family: "Courier New", monospace; font-size: 13px;
+}
+QMenu::item:selected { background-color: #00AA00; color: #000000; }
+QMenu::separator { height: 1px; background: #005500; margin: 2px 4px; }
+
+QFrame#panel_frame {
+    border: 1px solid #00AA00;
+    background-color: #000088;
+}
+QLabel#panel_title {
+    background-color: #00AA00;
+    color: #000000;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 1px 8px;
+    qproperty-alignment: AlignCenter;
+}
+
+QTreeView {
+    background-color: #000088;
+    color: #AAFFAA;
+    border: none;
+    font-family: "Courier New", monospace; font-size: 13px;
+    selection-background-color: #00AA00;
+    selection-color: #000000;
+    show-decoration-selected: 1;
+    alternate-background-color: #000088;
+    outline: none;
+}
+QTreeView::item { padding: 1px 2px; border: none; }
+QTreeView::item:hover { background-color: #004400; color: #AAFFAA; }
+QTreeView::item:selected { background-color: #00AA00; color: #000000; font-weight: bold; }
+QTreeView::branch { background-color: #000088; }
+
+QHeaderView { background-color: #000088; font-family: "Courier New", monospace; font-size: 13px; }
+QHeaderView::section {
+    background-color: #000088;
+    color: #FFFF55;
+    border: none;
+    border-bottom: 1px solid #00AA00;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+QSplitter::handle { background-color: #00AA00; width: 1px; }
+
+QPlainTextEdit#terminal_output {
+    background-color: #000000;
+    color: #00FF44;
+    font-family: "Courier New", monospace; font-size: 12px;
+    border: none;
+}
+QLineEdit#terminal_input {
+    background-color: #000000;
+    color: #00FF44;
+    font-family: "Courier New", monospace; font-size: 13px;
+    border: none;
+    border-top: 1px solid #00AA00;
+    padding: 2px 6px;
+}
+
+QStatusBar {
+    background-color: #000000;
+    color: #00AA00;
+    font-family: "Courier New", monospace; font-size: 12px;
+    border-top: 1px solid #00AA00;
+}
+QStatusBar::item { border: none; }
+
+QScrollBar:vertical { background: #000088; width: 10px; border: none; }
+QScrollBar::handle:vertical { background: #00AA00; min-height: 20px; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; }
+QScrollBar:horizontal { background: #000088; height: 10px; border: none; }
+QScrollBar::handle:horizontal { background: #00AA00; min-width: 20px; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0px; }
+
+QLabel#path_label {
+    background-color: #000088;
+    color: #00AA00;
+    font-family: "Courier New", monospace; font-size: 11px;
+    padding: 1px 4px;
+    border-top: 1px solid #00AA00;
+}
+QFrame#fkey_bar { background-color: #000000; border-top: 1px solid #00AA00; }
+
+QDialog {
+    background-color: #000088;
+    color: #FFFFFF;
+    font-family: "Courier New", monospace; font-size: 13px;
+}
+QDialog QLabel { color: #AAFFAA; }
+QDialog QLineEdit {
+    background: #000000; color: #00FF44;
+    border: 1px solid #00AA00;
+    font-family: "Courier New", monospace; font-size: 13px; padding: 2px 4px;
+}
+QDialog QPushButton {
+    background: #000088; color: #FFFFFF;
+    border: 1px solid #00AA00;
+    font-family: "Courier New", monospace; font-size: 13px;
+    padding: 3px 14px; min-width: 60px;
+}
+QDialog QPushButton:hover { background: #004400; }
+QMessageBox, QInputDialog {
+    background-color: #000088;
+    font-family: "Courier New", monospace; font-size: 13px;
+}

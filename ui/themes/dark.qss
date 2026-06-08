@@ -1,0 +1,32 @@
+* {
+    font-family: "Fira Sans";
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+QMainWindow {
+    background-color: #1e1e1e;
+}
+
+QMenuBar {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+QMenuBar::item:selected {
+    background: #3c3c3c;
+}
+
+QTreeView {
+    background-color: #252525;
+    border: 1px solid #3c3c3c;
+}
+
+QSplitter::handle {
+    background-color: #3c3c3c;
+}
+
+QTextEdit {
+    background-color: #1e1e1e;
+    border: 1px solid #3c3c3c;
+}

@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sysrunner"
+version = "0.1.0"
+description = "Modular System Operator Framework (Docker, DB, FS, Runner)"
+authors = [
+    { name = "Peter Paffgen" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "docker",
+    "sqlalchemy",
+    "pyside6",
+    "psutil",
+    "pyyaml",
+    "aiofiles"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "pytest",
+    "pytest-asyncio",
+    "mypy",
+    "types-PyYAML",
+    "types-psutil"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = "3.12"
+strict = false
+ignore_missing_imports = true
